@@ -3,17 +3,19 @@
 #define NUMBER 100
 int main(int argc,char *argv[])
 {
-	int i,j,n,c,k;
+	int i=0,j,n,c,k;
 	char str[7];
 	int d;
 	d = atoi(str);
 	 int a[NUMBER];
-	for (i=0;i<NUMBER;i++) {
+	while (fgets(str, sizeof(str), stdin)) {
+	
 		a[i] = d;
 		n = i;
 		if (a[i]==1)
 			break;
-	}
+	i++;
+	}	
 	for (k = 0; k <= n; k++) {
 		printf("%d ", a[k]);
 	}
