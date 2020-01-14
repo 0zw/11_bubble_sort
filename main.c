@@ -1,11 +1,15 @@
 #include <stdio.h>
+#include<stdlib.h>
 #define NUMBER 100
 int main(int argc,char *argv[])
 {
 	int i,j,n,c,k;
-	int a[NUMBER];
+	char str[7];
+	int d;
+	d = atoi(str);
+	 int a[NUMBER];
 	for (i=0;i<NUMBER;i++) {
-		scanf_s("%d", &a[i]);
+		a[i] = d;
 		n = i;
 		if (a[i]==1)
 			break;
